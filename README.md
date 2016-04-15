@@ -158,7 +158,7 @@ output <- summarise(grouped_tidy, mean(value))
 
 Summarized output file has been stored with in .txt format with write.table().
 ```{r}
-write.table(output, 'tidy_output.txt', col.names =FALSE)
+write.table(output, 'tidy_output.txt', row.names =FALSE)
 ```
 
 

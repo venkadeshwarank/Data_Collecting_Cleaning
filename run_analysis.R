@@ -70,4 +70,4 @@ grouped_tidy <- tidy %>% group_by(subject, activity, scale, variable, formula, a
 output <- summarise(grouped_tidy, mean(value))
 
 ## writing the output to local file
-write.table(output, 'tidy_output.txt', col.names =FALSE)
+write.table(output, 'tidy_output.txt', row.names =FALSE)
